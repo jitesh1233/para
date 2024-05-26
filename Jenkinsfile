@@ -1,19 +1,22 @@
 pipeline {
     agent any
     stages {
+        parameters {
+  choice choices: ['Build', 'Test', 'Deploy'], description: 'will pick any one', name: 'jitesh'
+}
         stage('Build') {
             steps {
-                echo 'Building'
+                echo '${jitesh}'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing'
+                echo '${jitesh}'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying'
+                echo '${jitesh}'
             }
         }
     }
