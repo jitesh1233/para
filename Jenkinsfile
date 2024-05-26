@@ -6,17 +6,17 @@ pipeline {
 }
         stage('Build') {
             steps {
-                echo '${jitesh}'
+                echo '${param.jitesh}'
             }
         }
         stage('Test') {
             steps {
-                echo '${jitesh}'
+                echo '${param.jitesh}'
             }
         }
         stage('Deploy') {
             steps {
-                echo '${jitesh}'
+                echo '${param.jitesh}'
             }
         }
     }
