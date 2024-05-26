@@ -6,17 +6,17 @@ pipeline {
 }
         stage('Build') {
             steps {
-                echo '${param.jitesh}'
+                echo "this is build: ${param.jitesh}"
             }
         }
         stage('Test') {
             steps {
-                echo '${param.jitesh}'
+                echo "$this is test: {param.jitesh}"
             }
         }
         stage('Deploy') {
             steps {
-                echo '${param.jitesh}'
+                echo "this is deply: ${param.jitesh}"
             }
         }
     }
